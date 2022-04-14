@@ -5,7 +5,7 @@
 ## [Download](https://github.com/gerrustalker/LDiscordRPC/releases)
 ## Preview
 ![DiscordRPC Preview (YES YOU CAN CHANGE THIS IMAGE)](https://github.com/gerrustalker/LDiscordRPC/blob/main/images/preview1.png)\
-![Cool console tag](https://github.com/gerrustalker/LDiscordRPC/raw/main/images/consoletag.png)
+![Cool console tag](https://github.com/gerrustalker/LDiscordRPC/blob/main/images/consoletag.png)
 
 
 ## Installation
@@ -20,7 +20,7 @@ You will need to [compile](#source-compiling) it yourself :)
 
 ## Source compiling
 *Note: this was compiled in Visual Studio 2019*
-##
+###
 You will need to change `Discord.cpp` to set your [Discord Application ID](https://discord.com/developers/applications/) and image key
 * ID at line **30**
 * Image at line **45**
