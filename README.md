@@ -4,8 +4,8 @@
 
 ## [Download](https://github.com/gerrustalker/LDiscordRPC/releases)
 ## Preview
-![DiscordRPC Preview (YES YOU CAN CHANGE THIS IMAGE)](https://cdn.lenofag.ru/public/sharex/Discord_NBhXOnWn2A.png)\
-![Cool console tag](https://cdn.lenofag.ru/public/sharex/hl2_1GakOLp4Dx.png)
+![DiscordRPC Preview (YES YOU CAN CHANGE THIS IMAGE)](https://github.com/gerrustalker/LDiscordRPC/blob/main/images/preview1.png)\
+![Cool console tag](https://github.com/gerrustalker/LDiscordRPC/raw/main/images/consoletag.png)
 
 
 ## Installation
@@ -31,7 +31,7 @@ You will need to change `Discord.cpp` to set your [Discord Application ID](https
 
 #### DiscordRPC:
 1. Require `/include/`
-2. Copy `/src/` folder to project (like [this](https://cdn.lenofag.ru/public/sharex/devenv_Vx9Z1x1bFd.png))
+2. Copy `/src/` folder to project (like [this](https://github.com/gerrustalker/LDiscordRPC/blob/main/images/discordrpcsrc.png))
 
 #### garrysmod-common:
 1. Download [premake5](https://premake.github.io/download)
