@@ -38,3 +38,7 @@ You will need to change `Discord.cpp` to set your [Discord Application ID](https
 2. Put premake5.exe to project folder
 3. Open `cmd` in project folder, then write in `premake5.exe vs2019`
 4. In new created folder named `project`, you will find your **solution file**
+
+
+##
+Please note, that this is my first C++ project.
