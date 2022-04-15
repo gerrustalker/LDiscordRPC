@@ -4,8 +4,8 @@
 
 ## [Download](https://github.com/gerrustalker/LDiscordRPC/releases)
 ## Preview
-![DiscordRPC Preview (YES YOU CAN CHANGE THIS IMAGE)](https://github.com/gerrustalker/LDiscordRPC/blob/main/images/preview1.png)\
-![Cool console tag](https://github.com/gerrustalker/LDiscordRPC/blob/main/images/consoletag.png)
+![DiscordRPC Preview (YES YOU CAN CHANGE THIS IMAGE)](images/preview2.png)\
+![Cool console tag](images/consoletag.png)
 
 
 ## Installation
@@ -13,17 +13,22 @@
 2. Put `gmsv_ldrpc_win32.dll` to `GarrysMod/garrysmod/lua/bin/` folder
 3. Put `lua` folder to `Garrysmod/garrysmod/`
 
-### bruh how do i change this image
-~~You don't.~~\
-You will need to [compile](#source-compiling) it yourself :)
+### Change image
+Without recompiling, you will need to change `lua/menu/ldrpc.lua` at line **46**, like
+```lua
+LDRPC.Initialize("12345228133769420") -- YES, IN QUOTES!
+```
+At your [Discord Developer Portal](https://discord.com/developers/applications/) you will need to upload `smallmain` for **big image** and `bigmain` for **small image**: (i am too lazy to change it xd)
+![Discord Developer Portal!](images/discorddevelopers.png)
+
 
 
 ## Source compiling
 *Note: this was compiled in Visual Studio 2019*
 ###
-You will need to change `Discord.cpp` to set your [Discord Application ID](https://discord.com/developers/applications/) and image key
-* ID at line **30**
-* Image at line **45**
+If you want to change default [Discord Application ID](https://discord.com/developers/applications/) and/or image keys:
+* ID in `Discord.h` at line **9**
+* Image in `Discord.cpp` at line **23** (large) and **25** (small)
 
 ### Dependencies:
 * [DiscordRPC](https://github.com/Classic1338/DiscordRichPresence-) ([yes](https://www.unknowncheats.me/forum/general-programming-and-reversing/361227-adding-discord-rich-presence-cheat.html))
@@ -39,6 +44,12 @@ You will need to change `Discord.cpp` to set your [Discord Application ID](https
 3. Open `cmd` in project folder, then write in `premake5.exe vs2019`
 4. In new created folder named `project`, you will find your **solution file**
 
+
+
+## Pasted?
+### Yes.
+* [unknowncheats.me](https://www.unknowncheats.me/forum/general-programming-and-reversing/361227-adding-discord-rich-presence-cheat.html) guide by [Warlock777888jr](https://www.unknowncheats.me/forum/members/1534130.html)
+* [this](https://pastebin.com/yNMnHKzV) pastebin for timestamps
 
 ##
 Please note, that this is my first C++ project.

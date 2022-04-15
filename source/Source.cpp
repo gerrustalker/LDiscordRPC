@@ -7,7 +7,9 @@ Discord* discord;
 using namespace GarrysMod::Lua;
 
 LUA_FUNCTION(LDRPC_Init) {
-	discord->Initialize();
+	char const *id = LUA->GetString(1);
+	if (id != NULL) discord->Initialize(id);
+	else discord->Initialize();
 	discord->Update("In-game");
 	return 0;
 }

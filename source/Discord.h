@@ -4,7 +4,7 @@
 
 class Discord {
 public:
-	void Initialize();
+	void Initialize(const char* appid = "YOURIDHERE :)");
 	void Shutdown();
 	void Update(const char* state = "In-game");
 };

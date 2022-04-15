@@ -2,10 +2,10 @@
 #include <iostream>;
 #include <chrono>;
 
-void Discord::Initialize() {
+void Discord::Initialize(const char* appid) {
     DiscordEventHandlers eventhandlers;
     memset(&eventhandlers, 0, sizeof(eventhandlers));
-    Discord_Initialize("YOURIDHERE", &eventhandlers, 1, "4000");
+    Discord_Initialize(appid, &eventhandlers, 1, "4000");
 };
 
 void Discord::Shutdown() {
@@ -20,8 +20,9 @@ void Discord::Update(const char* state) {
     discordPresence.state = state;
     discordPresence.details = "Playing Garry's Mod";
     discordPresence.startTimestamp = bigshit;
-    discordPresence.largeImageKey = "YOURIMAGEIDHERE";
-    discordPresence.largeImageText = ">w<";
-    //discordPresence.largeImageText = "Garry's Mod";
+    discordPresence.largeImageKey = "smallmain";
+    discordPresence.largeImageText = "Garry's Mod";
+    discordPresence.smallImageKey = "bigmain";
+    discordPresence.smallImageText = ">w<";
     Discord_UpdatePresence(&discordPresence);
 };
