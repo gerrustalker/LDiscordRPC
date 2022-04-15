@@ -1,6 +1,6 @@
 require("ldrpc")
 --if LDRPC then PrintTable(LDRPC) else return print"shitty c++" end
-if not LDRPC then return MsgC(Color(255, 0, 0), "Due to C++ (or VS2019) being complete trash, LDRPC is not working. :(\n") end
+if not LDRPC then return MsgC(Color(255, 0, 0), "Due to C++ (or VS2019 (or garrysmod-common)) being complete trash, LDRPC is not working. :(\n") end
 local state = "In Menu"
 
 --     __     ____   _                               __ ____   ____   ______
@@ -41,10 +41,9 @@ do
     
     MsgN()    
 end
--- PASTING RNB FROM YOGPOD ended
+-- PASTING RNB FROM YOGPOD ended. yay
 
---timer.Simple(2, function() LDRPC.Update("Lox eto ya") end)
-LDRPC.Initialize() MsgC(Color(0, 255, 0), "LDRPC Initialized\n")
+LDRPC.Initialize(--[[You can insert your Discord Application ID here!]]) MsgC(Color(0, 255, 0), "LDRPC Initialized\n")
 LDRPC.Update(state)
 local function GetPastedLoadingStatusXD() -- https://github.com/Facepunch/garrysmod/blob/master/garrysmod/lua/menu/loading.lua#L141-L159
     local str = GetLoadStatus()
@@ -67,5 +66,4 @@ timer.Create("LDRPC", 3, 0, function()
     if not sstate then sstate = "In Menu" end
 
     if state ~= sstate then state = sstate; LDRPC.Update(state) end
-    --print(state, sstate)
 end)
